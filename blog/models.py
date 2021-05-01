@@ -17,3 +17,15 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('post_detail', args=[str(self.id)])
         
+
+class Quiz(models.Model):
+    user=models.CharField(max_length=200,default='nishant')
+    firstfive=models.CharField(max_length=200,default='b')
+    lastfive=models.CharField(max_length=200,default='e')
+    remark=models.CharField(max_length=200,default='Architect')
+    def __str__(self):
+        return self.remark[0:50]
+
+    def get_absolute_url(self):
+        return reverse('home')
+        

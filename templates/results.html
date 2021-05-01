@@ -1,0 +1,19 @@
+{% extends '_base.html' %}
+
+
+{% block content %}
+
+{% for post in object_list %}
+
+<h1>Hello </h1><h2>{{ post.user }}</a></h2>
+<p>{{ post.user }} is {{post.remark}}</p>
+<br>
+<p>{{post.remark}}:<br>
+Defination Of Trait
+
+
+</p>
+
+{% endfor %}
+
+{% endblock content %}

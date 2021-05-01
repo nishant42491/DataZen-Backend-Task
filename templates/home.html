@@ -6,6 +6,7 @@
 Hi {{ user.email }}!
 <p><a href="{% url 'account_logout' %}">Log Out</a></p>
 <p><a href="{% url 'blogs' %}">Blogs</a>,</p>
+<p><a href="{% url 'quiz' %}">Data-Scientist-Personality-Test</a></p>
 {% else %}
 <p>You are not logged in</p>
 <a href="{% url 'account_login' %}">Log In</a>
