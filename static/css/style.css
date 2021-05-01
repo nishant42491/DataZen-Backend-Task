@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+body{
+    margin:0;
+    overflow:scroll;
+ 
+    background-repeat: no-repeat;
+}
+.display{
+    width:100%;
+    height:100%;
+   
+   
+}
+.box{
+    width:20%;
+    height:90%;
+    float: left;
+  
+    position:absolute;
+    opacity:0.9;
+    top:0;
+    z-index: 9;
+}
+.header{
+    width:100%;
+    height:20%;
+    border:1px dashed black;
+    resize: vertical;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+.pagedesign{
+    justify-content: flex-end;
+    display: flex;
+}
+
+.page{
+    resize: vertical;
+    overflow: auto;
+    border:1px dashed black;
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer{
+    width:100%;
+    height:20%;
+    border:1px dashed black;
+    resize: vertical;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#btnbgdesign{
+    margin-left:600px;
+    opacity: 0.8;
+   
+}
+.headerdesign{
+    justify-content: flex-end;
+    display: flex;
+}
+.footerdesign{
+    justify-content: flex-end;
+    display: flex;
+}
+#btnbgpagedesign{
+    margin-left:600px;
+    opacity: 0.8;
+    float:right;
+   
+   
+}
+#btnbgfootdesign{
+    margin-left:600px;
+    opacity: 0.8;
+    float:right;
+   
+}
+.boxright,.boxrightpage,.boxrightfooter{
+    float:right;
+    width:15%;
+    height:400px;
+
+ 
+    margin-top:50px;
+    background-color: blanchedalmond;
+    z-index: 9;
+    opacity: 0.8;
+    
+}
+.themes,.themespage,.themesfooter{
+overflow:scroll;
+
+height:200px;
+
+}
+.nocolor,.nocolorpage,.nocolorfooter{
+    text-align:center;
+   
+    width:90%;
+    height:20%;
+    background-color: white;
+    padding:10px;
+    cursor:pointer;
+}
+.color1,.color1page,.color1footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #0E2045;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color2,.color2page,.color2footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color:black;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color3,.color3page,.color3footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color:white;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color4,.color4page,.color4footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #3d73dd;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color5,.color5page,.color5footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #FF5C5C;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color6,.color6page,.color6footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #A6AFBD;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color7,.color7page,.color7footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #fE5C18;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color8,.color8page,.color8footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #522459;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color9,.color9page,.color9footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #A3CEB6;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color10,.color10page,.color10footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #ECB099;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color11,.color11page,.color11footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #5647B2;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color12,.color12page,.color12footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #fbae32;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.color13,.color13page,.color13footer{
+    text-align:center;
+    width:90%;
+    height:20%;
+    background-color: #A899D0;
+    padding:10px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+#bgtitle{
+    background-color: antiquewhite;
+    color:black;
+}
+#imgbg{
+    height:400px;
+    width:400px;
+    overflow:scroll;
+}
+#addlist ul li a{
+    font-size: 20px;;
+    cursor: pointer;
+    text-decoration: none;;
+
+}
+#addbox{
+
+    width:400px;
+    display: flex;
+    height: 400px;;
+}
+#addlist{
+    background-color:antiquewhite;
+    width:40%;
+   
+  
+}
+#addlist ul li {
+    list-style: none;
+    padding-bottom: 10px;;
+}
+#listextend{
+   background-color:white;
+   width:60%;
+   cursor: pointer;
+   
+   overflow: scroll;
+}
+#listextend ul li{
+    list-style: none;
+    padding-bottom: 20px;;
+}
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block; /* For Firefox */
+  }
+  

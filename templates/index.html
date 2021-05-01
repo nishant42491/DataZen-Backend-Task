@@ -1,0 +1,423 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <script src="{% static 'js/all.js' %}"></script>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Merienda+One|Aldrich|Nothing+You+Could+Do|Crete+Round|Karla:400,700|Original+Surfer|Salsa|Marmelad|Averia+Sans+Libre:700|Righteous|Sancreek|Alegreya+SC:900' rel='stylesheet' type='text/css'>
+  <script src="{% static 'js/jquery.js' %}"></script>  
+  <script src="{% static 'js/script.js' %}"></script>
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+<!--Increase Fontsize-->
+
+
+    
+    
+   <!--Draggable-->
+   
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+
+ <!--Move Icon-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   
+    <!-- JQuery CDN Link -->
+    
+     
+    <title>Page Builder</title>
+  </head>
+  <body>
+      <div class="container-fluid ml-0">
+        <!--Display-->
+        <div class="display">
+        <!--Header-->
+            <div class="header">
+              <div class="headerdesign">
+                  <button type="button"id="btnbgdesign" class="btn btn-dark">Change Header Design</button>
+              </div>
+                ffffff
+            </div>
+          <!--Page-->
+            <div class="page">
+                <div class="Pagedesign">
+                  <button type="button"id="btnbgpagedesign" class="btn btn-dark">Change Page Design</button>
+              </div>
+            </div>
+          <!--Footer-->
+            <div class="footer">
+                
+                <div class="footerdesign">
+                  <button type="button"id="btnbgfootdesign" class="btn btn-dark">Change Footer Design</button>
+              </div>
+            </div>
+
+        </div>
+        <!--Toolbox-->
+        <div class="box mt-5">
+          <div id="background">
+      <i id="backgroundbtn" style="font-size: 40px;cursor:pointer;border:2px solid gray;float:left;border-radius: 10px;background-color: white;padding: 5px;;"class="far fa-square"></i><br><h4 id="bgtext" style="background-color: white;width:120px;;">Background</h4><br><br>
+      <div id="backgroundbox">
+        <div id="bgtitle">
+        <h3 style="font-size:30px;">PageBackground<i id="closebtnbg" style="float:right;cursor:pointer;font-size:30px;"class="far fa-times-circle"></i></h3>
+      </div>
+      <div id="customizebg" class="mt-5">
+      <button class="btn btn-dark"href="#imgbg" id="imagesbg"style="border-radius:10px;padding:5px;">Images</button>
+      <button class="btn btn-dark" id="colorbg"style="border-radius:10px;padding:5px;margin-left:10px;">Color</button><hr>
+      <div id="colorbgpage">
+      <input type="color" id="changebgcolor">
+      <button class="btn btn-dark" id="submitbgcolor"style="border-radius:10px;padding:5px;margin-left:10px;">Apply</button><hr>
+    </div>
+      <div id="customizebg2" class="mt-5">
+        <h3 style="background-color: gray;">Select Background</h3>
+      </div>
+      <div id="imgbg">
+        <img src="{% static 'img/bg1.jpg' %}"style="width:150px;height:150px;cursor:pointer;"onclick="bg1()">
+        <img src="{% static 'img/bg2.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;"onclick="bg2()">
+        <img src="{% static 'img/bg3.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg3()">
+        <img src="{% static 'img/bg4.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;margin-top:30px;"onclick="bg4()">
+        <img src="{% static 'img/bg5.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg5()">
+        <img src="{% static 'img/bg6.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;margin-top:30px;"onclick="bg6()">
+        <img src="{% static 'img/bg7.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg7()">
+        <img src="{% static 'img/bg8.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;margin-top:30px;"onclick="bg8()">
+        <img src="{% static 'img/bg9.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg9()">
+        <img src="{% static 'img/bg10.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;margin-top:30px;"onclick="bg10()">
+        <img src="{% static 'img/bg11.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;"onclick="bg11()">
+        <img src="{% static 'img/bg12.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg12()">
+        <img src="{% static 'img/bg13.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;margin-top:30px;"onclick="bg13()">
+        <img src="{% static 'img/bg14.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg14()">
+        <img src="{% static 'img/bg15.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;margin-top:30px;"onclick="bg15()">
+        <img src="{% static 'img/bg16.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg16()">
+        <img src="{% static 'img/bg17.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;margin-top:30px;"onclick="bg17()">
+        <img src="{% static 'img/bg18.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg18()">
+        <img src="{% static 'img/bg19.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-left:30px;margin-top:30px;"onclick="bg19()">
+        <img src="{% static 'img/bg20.jpg' %}"style="width:150px;height:150px;cursor:pointer;margin-top:30px;"onclick="bg20()">
+      </div>
+      </div>
+   
+    </div>
+    </div>
+      <i id="add"style="font-size: 40px;cursor:pointer;border:2px solid gray;float:left;border-radius: 10px;background-color: white;padding: 5px;;"class="fas fa-plus"></i><br><h4 style="background-color: white;width:120px;;">Add</h4><i id="closebtnadd" style="float:right;cursor:pointer;font-size:30px;position:relative;bottom:30px;left:30px;"class="far fa-times-circle"></i>
+      <div id="addbox">
+      <div id="addlist">
+        <ul>
+          <li><a>Strip</a></li>
+          <li id="textlist"><a>Text</a></li>
+          <li><a>Image</a></li>
+          <li><a>Button</a></li>
+          <li><a>Decoratives</a></li>
+          <li><a>Shapes</a></li>
+          <li><a>Interactive</a></li>
+          <li><a>Social</a></li>
+        </ul>
+      </div>
+      <div id="listextend">
+        <ul>
+        <h4>Themed Text</h4><hr>
+        <li><h1 id="heading1">Heading1</h1></li>
+        <li><h2 id="heading2">Heading</h2></li>
+        <li><h3 id="heading3">Heading3</h3></li>
+        <li><h4 id="heading4">Heading4</h4></li>
+        <li><h4 id="heading5" style="font-family:'Dela Gothic One', cursive;">Cursive heading</h4></li>
+     
+       <li></li> <h4>Titles</h4><hr>
+ 
+       <li><h1 style="font-family:'Dela Gothic One', cursive;"id="t1">ALL CAPS TITLE</h1></li>
+       <li><h1 style="font-family: 'Lobster', cursive;"id="t2">Cursive Title</h1></li>
+       <li><h1 style="font-family: 'Fredoka One', cursive;"id="t3">Faty Title</h1></li>
+       <li><h1 style="font-family: 'Permanent Marker', cursive;"id="t4">Marker Title</h1></li>
+       <li><h1 style="font-family: 'Oi', cursive;"id="t5">Darker Title</h1></li><br>
+       <h4>Parragraph</h4><hr>
+       <p style="font-family: 'Parisienne', cursive;"id="p1">This is Cursive Paragraph</p>
+       <p id="p2">This is Simple Paragraph</p>
+      </ul>
+      </div>
+     
+      </div>
+   
+        </div>
+        <!--Themed Header-->
+        <div class="boxright">
+          <div class="title"style="background-color:aqua;padding:10px;">
+            <h3>Header Design<i id="closebtn" style="float:right;cursor:pointer;"class="far fa-times-circle"></i></h3>
+          </div>
+          <div class="themes"style="padding:10px;">
+            <u><h3>Themed Headers</h3></u>
+            <div class="nocolor">
+              No color
+            </div>
+            <div class="color1">
+              color1
+            </div>
+            <div class="color2">
+              color2
+            </div>
+            <div class="color3">
+              color3
+            </div>
+            <div class="color4">
+              color4
+            </div>
+            <div class="color5">
+              color5
+            </div>
+            <div class="color6">
+              color6
+            </div>
+            <div class="color7">
+              color7
+            </div>
+            <div class="color8">
+              color8
+            </div>
+            <div class="color9">
+              color9
+            </div>
+            <div class="color10">
+              color10
+            </div>
+            <div class="color11">
+              color11
+            </div>
+            <div class="color12">
+              color12
+            </div>
+            <div class="color13">
+              color13
+            </div>
+
+          
+        </div>
+        <hr>
+        <div class="custombgselect">
+          <h3><u>Customized Color</u></h3>
+          <input id="bgcustom"type="color">
+          <label for="bgcustom">Select Color Of your Choice</label>
+          <buton class="btn btn-dark" value="Apply" id="btnbgcustom">Apply</buton>
+        </div>
+      </div>
+      <!--Themed page-->
+      <div class="boxrightpage">
+        <div class="titlepage"style="background-color:aqua;padding:10px;">
+          <h3>Page Design<i id="closebtnpage" style="float:right;cursor:pointer;"class="far fa-times-circle"></i></h3>
+        </div>
+        <div class="themespage"style="padding:10px;">
+          <u><h3>Themed Page</h3></u>
+          <div class="nocolorpage">
+            No color
+          </div>
+          <div class="color1page">
+            color1
+          </div>
+          <div class="color2page">
+            color2
+          </div>
+          <div class="color3page">
+            color3
+          </div>
+          <div class="color4page">
+            color4
+          </div>
+          <div class="color5page">
+            color5
+          </div>
+          <div class="color6page">
+            color6
+          </div>
+          <div class="color7page">
+            color7
+          </div>
+          <div class="color8page">
+            color8
+          </div>
+          <div class="color9page">
+            color9
+          </div>
+          <div class="color10page">
+            color10
+          </div>
+          <div class="color11page">
+            color11
+          </div>
+          <div class="color12page">
+            color12
+          </div>
+          <div class="color13page">
+            color13
+          </div>
+
+        
+      </div>
+      <hr>
+      <div class="custombgselectpage">
+        <h3><u>Customized Color</u></h3>
+        <input id="bgcustompage"type="color">
+        <label for="bgcustompage">Select Color Of your Choice</label>
+        <buton class="btn btn-dark" value="Apply" id="btnbgcustompage">Apply</buton>
+      </div>
+    </div>
+    <!--Themed Footer-->
+    <div class="boxrightfooter">
+      <div class="titlefooter"style="background-color:aqua;padding:10px;">
+        <h3>Footer Design<i id="closebtnfooter" style="float:right;cursor:pointer;"class="far fa-times-circle"></i></h3>
+      </div>
+      <div class="themesfooter"style="padding:10px;">
+        <u><h3>Themed Footer</h3></u>
+        <div class="nocolorfooter">
+          No color
+        </div>
+        <div class="color1footer">
+          color1
+        </div>
+        <div class="color2footer">
+          color2
+        </div>
+        <div class="color3footer">
+          color3
+        </div>
+        <div class="color4footer">
+          color4
+        </div>
+        <div class="color5footer">
+          color5
+        </div>
+        <div class="color6footer">
+          color6
+        </div>
+        <div class="color7footer">
+          color7
+        </div>
+        <div class="color8footer">
+          color8
+        </div>
+        <div class="color9footer">
+          color9
+        </div>
+        <div class="color10footer">
+          color10
+        </div>
+        <div class="color11footer">
+          color11
+        </div>
+        <div class="color12footer">
+          color12
+        </div>
+        <div class="color13footer">
+          color13
+        </div>
+
+      
+    </div>
+    <hr>
+    <div class="custombgselectfooter">
+      <h3><u>Customized Color</u></h3>
+      <input id="bgcustomfooter"type="color">
+      <label for="bgcustomfooter">Select Color Of your Choice</label>
+      <buton class="btn btn-dark" value="Apply" id="btnbgcustomfooter">Apply</buton>
+    </div>
+  </div>
+  <!--body-->
+<script>
+  function bg1(){
+document.body.style.backgroundImage='url("{% static 'img/bg1.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg2(){
+document.body.style.backgroundImage='url("{% static 'img/bg2.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg3(){
+document.body.style.backgroundImage='url("{% static 'img/bg3.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg4(){
+document.body.style.backgroundImage='url("{% static 'img/bg4.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg5(){
+document.body.style.backgroundImage='url("{% static 'img/bg5.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg6(){
+document.body.style.backgroundImage='url("{% static 'img/bg6.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg7(){
+document.body.style.backgroundImage='url("{% static 'img/bg7.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg8(){
+document.body.style.backgroundImage='url("{% static 'img/bg8.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg9(){
+document.body.style.backgroundImage='url("{% static 'img/bg9.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg10(){
+document.body.style.backgroundImage='url("{% static 'img/bg10.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg11(){
+document.body.style.backgroundImage='url("{% static 'img/bg11.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg12(){
+document.body.style.backgroundImage='url("{% static 'img/bg12.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg13(){
+document.body.style.backgroundImage='url("{% static 'img/bg13.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg14(){
+document.body.style.backgroundImage='url("{% static 'img/bg14.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg15(){
+document.body.style.backgroundImage='url("{% static 'img/bg15.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg16(){
+document.body.style.backgroundImage='url("{% static 'img/bg16.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg17(){
+document.body.style.backgroundImage='url("{% static 'img/bg17.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg18(){
+document.body.style.backgroundImage='url("{% static 'img/bg18.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg19(){
+document.body.style.backgroundImage='url("{% static 'img/bg3.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+  function bg20(){
+document.body.style.backgroundImage='url("{% static 'img/bg3.jpg' %}")';
+document.body.style.backgroundSize='100%';
+  }
+</script>
+  </body>
+  </html>
